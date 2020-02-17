@@ -17,7 +17,7 @@
         tools:layout_editor_absoluteY="57dp" />
 
     <EditText
-        android:id="@+id/jari-jari2"
+        android:id="@+id/jari_jari2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -38,6 +38,7 @@
         tools:layout_editor_absoluteY="135dp" />
 
     <Button
+        android:id="@+id/btn_hasil_luas_lingkaran"
         android:layout_width="182dp"
         android:layout_height="42dp"
         android:text="Hitung"
@@ -45,7 +46,7 @@
         tools:layout_editor_absoluteY="187dp" />
 
     <TextView
-        android:id="@+id/hasil_luas"
+        android:id="@+id/tvhasil_luas"
         android:layout_width="150dp"
         android:layout_height="30dp"
         android:text="0.0"

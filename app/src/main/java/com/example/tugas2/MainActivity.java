@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    public Button btnKelilingLingkaran,btnLuasLingkaran;
+    private Button btnKelilingLingkaran,btnLuasLingkaran;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,15 +18,18 @@ public class MainActivity extends AppCompatActivity {
         btnKelilingLingkaran.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent moveIntenKeliling=new Intent(MainActivity.this,KelilingLingkaran.class);
+                Intent moveIntent=new Intent(MainActivity.this,KelilingLingkaran.class);
+                startActivity(moveIntent);
             }
         });
-        btnLuasLingkaran=findViewById(R.id.btn_luas_lingkaran);
-        btnLuasLingkaran.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent moveIntenLuas=new Intent(MainActivity.this,luas_lingkaran.class);
-            }
-        });
+//        btnLuasLingkaran=findViewById(R.id.btn_luas_lingkaran);
+//        btnLuasLingkaran.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent moveIntenLuas=new Intent(MainActivity.this,luas_lingkaran.class);
+//                startActivity(moveIntenLuas);
+//            }
+//        });
+
     }
 }
